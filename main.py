@@ -10,7 +10,7 @@ def welcome(message):
 @bot.message_handler(content_types=['text'])
 def talk(message):
     if(message.text.isnumeric() and len(message.text)==12):
-        bot.send_message(message.chat.id,"Правильно, теперь на этот каспий номер +7 776 221 9957 Илияс Н")
+        bot.send_message(message.chat.id,"Правильно, теперь на этот каспий номер ")
     if(message.text.isnumeric() and (len(message.text)>12 or len(message.text)<12)) :
         bot.send_message(message.chat.id,"не правилно напишите свой иин правильно")
     if(message.text.isnumeric()==False):
